@@ -30,6 +30,7 @@
   .question-list { display:grid; gap:.9rem; }
   .card { background:var(--paper); border:1px solid var(--line); border-radius:14px; padding:1.15rem 1.3rem; box-shadow:0 5px 20px #17324b08; }
   .question-row { display:flex; align-items:baseline; gap:.75rem; }
+  .question-row + .question-row { margin-top:.3rem; }
   .qno { flex:none; color:var(--accent); font-size:.8rem; font-weight:800; font-variant-numeric:tabular-nums; }
   h3 { margin:0; font-size:1.07rem; line-height:1.55; }
   details { margin:.8rem 0 0 2.45rem; border-top:1px solid var(--line); padding-top:.65rem; }
@@ -39,6 +40,7 @@
   .answer { margin-top:.8rem; padding:.85rem 1rem; border-left:3px solid var(--accent); border-radius:0 8px 8px 0; background:var(--accent-soft); color:#244457; }
   .answer p { margin:0; white-space:pre-wrap; }
   .answer p + p { margin-top:.7rem; }
+  .source-underline { text-decoration:underline; text-decoration-thickness:1.5px; text-underline-offset:.16em; }
   footer { max-width:1080px; margin:0 auto; padding:0 1.25rem 2rem; color:var(--muted); font-size:.82rem; }
   @media (max-width:640px) { .hero { padding:2.5rem 1.25rem; } .toc-inner { display:block; } .toc-label { display:block; margin-bottom:.25rem; } main { padding-top:1.5rem; } .card { padding:1rem; } details { margin-left:0; } .topic-head { flex-wrap:wrap; } .count { margin-left:0; } }
   @media (prefers-reduced-motion:reduce) { html { scroll-behavior:auto; } }
@@ -49,30 +51,43 @@
 <header class="hero">
   <p class="eyebrow">Speaking · Part 1</p>
   <h1>P1 口语问答电子手册</h1>
-  <p>14 个话题 · 69 道问答 · 点击“查看答案”展开内容</p>
+  <p>27 个话题 · 132 道问答 · 点击“查看答案”展开内容</p>
 </header>
 <nav class="toc" aria-label="话题目录"><div class="toc-inner">
   <span class="toc-label">目录</span><div class="toc-links">
-    <a href="#topic-1">旧题 1 · Music</a>
-    <a href="#topic-2">旧题 2 · Teachers</a>
-    <a href="#topic-3">旧题 3 · Social media</a>
-    <a href="#topic-4">旧题 4 · Tidiness</a>
-    <a href="#topic-5">旧题 5 · Websites</a>
-    <a href="#topic-6">旧题 6 · Watch</a>
-    <a href="#topic-7">旧题 7 · Shopping</a>
-    <a href="#topic-8">旧题 8 · Cars</a>
-    <a href="#topic-9">旧题 9 · Public gardens and parks</a>
-    <a href="#topic-10">旧题 10 · Science</a>
-    <a href="#topic-11">旧题 11 · Mirrors</a>
-    <a href="#topic-12">旧题 12 · Outer space and stars</a>
-    <a href="#topic-13">旧题 13 · Singing</a>
-    <a href="#topic-15">旧题 15 · Jokes &amp; Comedies</a>
+    <a href="#topic-old-1">旧题 1 · Music</a>
+    <a href="#topic-old-2">旧题 2 · Teachers</a>
+    <a href="#topic-old-3">旧题 3 · Social media</a>
+    <a href="#topic-old-4">旧题 4 · Tidiness</a>
+    <a href="#topic-old-5">旧题 5 · Websites</a>
+    <a href="#topic-old-6">旧题 6 · Watch</a>
+    <a href="#topic-old-7">旧题 7 · Shopping</a>
+    <a href="#topic-old-8">旧题 8 · Cars</a>
+    <a href="#topic-old-9">旧题 9 · Public gardens and parks</a>
+    <a href="#topic-old-10">旧题 10 · Science</a>
+    <a href="#topic-old-11">旧题 11 · Mirrors</a>
+    <a href="#topic-old-12">旧题 12 · Outer space and stars</a>
+    <a href="#topic-old-13">旧题 13 · Singing</a>
+    <a href="#topic-old-14">旧题 14 · Clothing</a>
+    <a href="#topic-old-15">旧题 15 · Jokes &amp; Comedies</a>
+    <a href="#topic-old-16">旧题 16 · Headphones</a>
+    <a href="#topic-new-1">新题 1 · Travelling</a>
+    <a href="#topic-new-2">新题 2 · Rubbish and recycling</a>
+    <a href="#topic-new-3">新题 3 · Tiredness</a>
+    <a href="#topic-new-4">新题 4 · Shoes</a>
+    <a href="#topic-new-5">新题 5 · Politeness</a>
+    <a href="#topic-new-6">新题 6 · Fruit and vegetables</a>
+    <a href="#topic-new-7">新题 7 · Advertisement</a>
+    <a href="#topic-new-8">新题 8 · Paper</a>
+    <a href="#topic-new-9">新题 9 · Secondary school</a>
+    <a href="#topic-new-10">新题 10 · Name</a>
+    <a href="#topic-new-11">新题 11 · Opportunities</a>
   </div></div></nav>
 <main>
-<section class="topic" id="topic-1" aria-labelledby="heading-1">
+<section class="topic" id="topic-old-1" aria-labelledby="heading-old-1">
   <div class="topic-head">
     <span class="topic-num">旧题 1</span>
-    <h2 id="heading-1">Music</h2>
+    <h2 id="heading-old-1">Music</h2>
     <span class="count">4 道题</span>
   </div><div class="question-list">
     <article class="card">
@@ -81,7 +96,7 @@
         <h3 lang="en">Do you prefer sad or happy music?</h3>
       </div>
       <details><summary>查看答案</summary><div class="answer" lang="en">
-        <p>Well, I don’t really favor one over the other. It actually depends on what I’m doing at the moment. If I’m working out, I prefer happy music. Because it gets me pumped up. But when I’m walking alone in the park at night, I’d like to listen to sad music. It lets me soak in the peaceful atmosphere much better.</p>
+        <p>Well, I don’t really favor one over the other. It actually depends on what I’m doing at the moment. If I’m working out, I prefer happy music. Because it gets me pumped up. But when I’m walking quietly alone at night, I like to listen to sad music. It lets me fully soak in the peaceful atmosphere.</p>
       </div></details>
     </article>
     <article class="card">
@@ -90,7 +105,7 @@
         <h3 lang="en">Does happy music make you feel more excited?</h3>
       </div>
       <details><summary>查看答案</summary><div class="answer" lang="en">
-        <p>Well, generally speaking, it does. Happy music can lift my mood and make me feel more energetic. But if I’m already annoyed or worn out, I find it a bit noisy. At that time, I just want peace and quiet.</p>
+        <p>Well, generally speaking, it does. Happy music can lift my mood and make me feel more energetic. But if I’m already annoyed or worn out, I find it a bit noisy. At those times, I just want peace and quiet.</p>
       </div></details>
     </article>
     <article class="card">
@@ -99,7 +114,7 @@
         <h3 lang="en">Have you taken any music classes?</h3>
       </div>
       <details><summary>查看答案</summary><div class="answer" lang="en">
-        <p>Well, I&#x27;ve never taken any formal singing lessons, but I took trumpet lessons for many years from a professional teacher. I even got a lower entry score thanks to this skill. It was a special admission offer for musical talents.</p>
+        <p>Well, I&#x27;ve never taken any formal singing lessons, but I took trumpet lessons for many years from a professional teacher. I even got in with a lower score thanks to this skill. It was a special admission offer for musical talent.</p>
       </div></details>
     </article>
     <article class="card">
@@ -113,10 +128,10 @@
     </article>
   </div>
 </section>
-<section class="topic" id="topic-2" aria-labelledby="heading-2">
+<section class="topic" id="topic-old-2" aria-labelledby="heading-old-2">
   <div class="topic-head">
     <span class="topic-num">旧题 2</span>
-    <h2 id="heading-2">Teachers</h2>
+    <h2 id="heading-old-2">Teachers</h2>
     <span class="count">6 道题</span>
   </div><div class="question-list">
     <article class="card">
@@ -134,7 +149,7 @@
         <h3 lang="en">Do you want to be a teacher in the future?</h3>
       </div>
       <details><summary>查看答案</summary><div class="answer" lang="en">
-        <p>Honestly, I haven&#x27;t made up my mind yet. Teaching is a meaningful career and teachers not only pass on knowledge to students, but also help them develop positive values. Still, I don&#x27;t have much patience. If students kept making the same mistakes, I might get annoyed quite easily.</p>
+        <p>Honestly, I haven&#x27;t made up my mind yet. Teaching is a meaningful career and teachers not only pass on knowledge to students, but also help them <span class="source-underline">develop positive values</span>. Still, I don&#x27;t have much patience. If students keep making the same mistakes, I might get annoyed quite easily.</p>
       </div></details>
     </article>
     <article class="card">
@@ -152,7 +167,7 @@
         <h3 lang="en">Are you still in touch with your primary school teachers?</h3>
       </div>
       <details><summary>查看答案</summary><div class="answer" lang="en">
-        <p>Not really. It has been too long. I really should make time to go back and visit them, but I’ve never found the right moment. Besides, I would feel a little awkward going there alone.</p>
+        <p>Not really. It has been such a long time. I really should make time to go back and visit them, but I’ve never found the right moment. Besides, I would feel a little awkward going there alone.</p>
       </div></details>
     </article>
     <article class="card">
@@ -161,7 +176,7 @@
         <h3 lang="en">In what way has your favorite teacher helped you?</h3>
       </div>
       <details><summary>查看答案</summary><div class="answer" lang="en">
-        <p>She helped me in quite a few ways. Academically speaking, my English teacher sparked my interest in English. Personally speaking, she gave me lots of emotional support when I felt stressed about my studies.</p>
+        <p>She helped me in quite a few ways. Academically speaking, my English teacher sparked my interest in English. On a personal level, she gave me lots of emotional support when I felt stressed about my studies.</p>
       </div></details>
     </article>
     <article class="card">
@@ -170,15 +185,15 @@
         <h3 lang="en">Do you like your primary school teachers more than your high school teachers?</h3>
       </div>
       <details><summary>查看答案</summary><div class="answer" lang="en">
-        <p>Well, it’s hard to say. Both offered me valuable support as I was growing up. Primary-school teachers cared more about my daily life, while high-school teachers focused more on my academic performance.</p>
+        <p>Well, it’s hard to say. Both offered me valuable support as I grew up. Primary-school teachers cared more about my daily life, while high-school teachers focused more on my academic performance.</p>
       </div></details>
     </article>
   </div>
 </section>
-<section class="topic" id="topic-3" aria-labelledby="heading-3">
+<section class="topic" id="topic-old-3" aria-labelledby="heading-old-3">
   <div class="topic-head">
     <span class="topic-num">旧题 3</span>
-    <h2 id="heading-3">Social media</h2>
+    <h2 id="heading-old-3">Social media</h2>
     <span class="count">5 道题</span>
   </div><div class="question-list">
     <article class="card">
@@ -214,7 +229,7 @@
         <h3 lang="en">Do your friends use social media?</h3>
       </div>
       <details><summary>查看答案</summary><div class="answer" lang="en">
-        <p>Absolutely, all my friends use social media every single day. We share funny short clips and those featuring good-looking people. And we also chat about little daily stuff on it. It’s our main way to stay connected with one another.</p>
+        <p>Absolutely, all my friends use social media every single day. We share funny short clips and ones featuring good-looking people. And we also chat about little daily stuff on it. It’s our main way to stay connected with one another.</p>
       </div></details>
     </article>
     <article class="card">
@@ -228,10 +243,10 @@
     </article>
   </div>
 </section>
-<section class="topic" id="topic-4" aria-labelledby="heading-4">
+<section class="topic" id="topic-old-4" aria-labelledby="heading-old-4">
   <div class="topic-head">
     <span class="topic-num">旧题 4</span>
-    <h2 id="heading-4">Tidiness</h2>
+    <h2 id="heading-old-4">Tidiness</h2>
     <span class="count">6 道题</span>
   </div><div class="question-list">
     <article class="card">
@@ -258,7 +273,7 @@
         <h3 lang="en">How do you keep your work or study space tidy?</h3>
       </div>
       <details><summary>查看答案</summary><div class="answer" lang="en">
-        <p>Well, nothing special really. I usually just wipe my desk and sweep the floor. And I generally do this before I start studying. You know, it’s just my little ritual before I get down to work.</p>
+        <p>Well, nothing special really. I usually just wipe my desk and sweep the floor. And I generally do this before I start studying. You know, it’s just my little ritual before I <span class="source-underline">get down to work</span>.</p>
       </div></details>
     </article>
     <article class="card">
@@ -267,7 +282,7 @@
         <h3 lang="en">Do you think that it is necessary to be tidy?</h3>
       </div>
       <details><summary>查看答案</summary><div class="answer" lang="en">
-        <p>I’d say it is. A tidy space can put people in a good mood and help them stay focused. Besides, it saves plenty of time as they can find what they need much faster. When I’m running late, I really don’t want to play hide-and-seek with my keys.</p>
+        <p>I would say it is. A tidy space can put people in a good mood and help them stay focused. Besides, it saves plenty of time as they can find what they need much faster. When I’m <span class="source-underline">running late</span>, I really don’t want to play hide-and-seek with my keys.</p>
       </div></details>
     </article>
     <article class="card">
@@ -290,10 +305,10 @@
     </article>
   </div>
 </section>
-<section class="topic" id="topic-5" aria-labelledby="heading-5">
+<section class="topic" id="topic-old-5" aria-labelledby="heading-old-5">
   <div class="topic-head">
     <span class="topic-num">旧题 5</span>
-    <h2 id="heading-5">Websites</h2>
+    <h2 id="heading-old-5">Websites</h2>
     <span class="count">7 道题</span>
   </div><div class="question-list">
     <article class="card">
@@ -302,7 +317,7 @@
         <h3 lang="en">What kinds of websites do you often visit?</h3>
       </div>
       <details><summary>查看答案</summary><div class="answer" lang="en">
-        <p>Well, mostly short-video platforms. There is a wide range of content on them, like funny short clips and those featuring good-looking people. So I enjoy browsing them in my spare time. But they are pretty addictive and eat up a lot of my free time.</p>
+        <p>Well, mostly short-video platforms. There is a wide range of content on them, like funny short clips and ones featuring good-looking people. So I enjoy browsing them in my spare time. But they are pretty addictive and eat up a lot of my free time.</p>
         <p>[Sometimes I open it for five minutes and end up watching videos for half an hour.]</p>
       </div></details>
     </article>
@@ -312,7 +327,7 @@
         <h3 lang="en">What is your favorite website?</h3>
       </div>
       <details><summary>查看答案</summary><div class="answer" lang="en">
-        <p>My favorite website is definitely Douyin, which is China’s domestic version of TikTok. I usually go there to watch funny short clips and those featuring good-looking people. But they are pretty addictive and eat up a lot of my free time.</p>
+        <p>My favorite website is definitely Douyin, which is China’s domestic version of TikTok. I usually go there to watch funny short clips and ones featuring good-looking people. But they are pretty addictive and eat up a lot of my free time.</p>
       </div></details>
     </article>
     <article class="card">
@@ -348,7 +363,7 @@
         <h3 lang="en">Would you like to have your own website?</h3>
       </div>
       <details><summary>查看答案</summary><div class="answer" lang="en">
-        <p>Well, not really. Maintaining a website takes a great deal of time and energy. You need to update its content regularly and fix any problems. I’m already occupied with my studies, so I don’t believe I could manage it well for the time being.</p>
+        <p>Well, not really. Maintaining a website takes a great deal of time and energy. You need to update its content regularly and fix any problems. I’m already occupied with IELTS, so I don’t believe I could manage it well for the time being.</p>
       </div></details>
     </article>
     <article class="card">
@@ -362,10 +377,10 @@
     </article>
   </div>
 </section>
-<section class="topic" id="topic-6" aria-labelledby="heading-6">
+<section class="topic" id="topic-old-6" aria-labelledby="heading-old-6">
   <div class="topic-head">
     <span class="topic-num">旧题 6</span>
-    <h2 id="heading-6">Watch</h2>
+    <h2 id="heading-old-6">Watch</h2>
     <span class="count">4 道题</span>
   </div><div class="question-list">
     <article class="card">
@@ -374,7 +389,7 @@
         <h3 lang="en">Do you wear a watch?</h3>
       </div>
       <details><summary>查看答案</summary><div class="answer" lang="en">
-        <p>Not really. I&#x27;m not used to wearing one, and whenever I need to check the time, I just glance at my phone. Besides, wearing a watch sometimes feel a bit restrictive on my wrist. Especially when I’m taking notes and resting my wrist on the desk.</p>
+        <p>Not really. I&#x27;m not used to wearing one, and whenever I need to check the time, I just glance at my phone. Besides, wearing a watch sometimes feels a bit restrictive on my wrist. Especially when I’m taking notes and resting my wrist on the desk.</p>
       </div></details>
     </article>
     <article class="card">
@@ -383,7 +398,7 @@
         <h3 lang="en">Have you ever got a watch as a gift?</h3>
       </div>
       <details><summary>查看答案</summary><div class="answer" lang="en">
-        <p>Yeah, actually I have. I once received a Casio mechanical watch as a birthday gift from my ex-girlfriend. It was such a thoughtful present that it totally blew me away. Every time I glance at it, I can remember all the nice moments we shared.</p>
+        <p>Yeah, actually I have. I once received a Casio mechanical watch as a birthday gift from my ex-girlfriend. It was such a thoughtful present that it totally blew me away. Every time I see it, I can remember all the nice moments we shared.</p>
       </div></details>
     </article>
     <article class="card">
@@ -392,7 +407,7 @@
         <h3 lang="en">Why do some people wear expensive watches?</h3>
       </div>
       <details><summary>查看答案</summary><div class="answer" lang="en">
-        <p>Well, I think there are a couple of reasons. For some people, an expensive watch is a status symbol, It shows their success and social position. What’s more, others simply value its high quality and intricate design.</p>
+        <p>Well, I think there are a couple of reasons. For some people, an expensive watch is a status symbol, It shows their success and social status. What’s more, others simply value its high quality and intricate design.</p>
       </div></details>
     </article>
     <article class="card">
@@ -401,15 +416,15 @@
         <h3 lang="en">Do you think it is important to wear a watch?</h3>
       </div>
       <details><summary>查看答案</summary><div class="answer" lang="en">
-        <p>I wouldn&#x27;t say so. To be honest, people can easily check the time on their phones these days. For me, watches are more like accessories to match outfits. what&#x27;s more, a nice watch can add a touch of style to my whole look.</p>
+        <p>I wouldn&#x27;t say so. To be honest, people can easily check the time on their phones these days. For me, watches are more like accessories to match outfits. What&#x27;s more, a nice watch can add a touch of style to my whole look.</p>
       </div></details>
     </article>
   </div>
 </section>
-<section class="topic" id="topic-7" aria-labelledby="heading-7">
+<section class="topic" id="topic-old-7" aria-labelledby="heading-old-7">
   <div class="topic-head">
     <span class="topic-num">旧题 7</span>
-    <h2 id="heading-7">Shopping</h2>
+    <h2 id="heading-old-7">Shopping</h2>
     <span class="count">4 道题</span>
   </div><div class="question-list">
     <article class="card">
@@ -450,10 +465,10 @@
     </article>
   </div>
 </section>
-<section class="topic" id="topic-8" aria-labelledby="heading-8">
+<section class="topic" id="topic-old-8" aria-labelledby="heading-old-8">
   <div class="topic-head">
     <span class="topic-num">旧题 8</span>
-    <h2 id="heading-8">Cars</h2>
+    <h2 id="heading-old-8">Cars</h2>
     <span class="count">6 道题</span>
   </div><div class="question-list">
     <article class="card">
@@ -489,7 +504,7 @@
         <h3 lang="en">What do you usually do when there is a traffic jam?</h3>
       </div>
       <details><summary>查看答案</summary><div class="answer" lang="en">
-        <p>Honestly, I can’t stand traffic jams. Whenever I’m stuck in heavy traffic, I feel really irritated, especially when I keep hearing car horns around me.I don’t want to waste my time on this boring wait. Normally, listening to music is my only way to pass the time.</p>
+        <p>Honestly, I can’t stand traffic jams. Whenever I’m stuck in heavy traffic, I feel really irritated. I don’t want to waste my time on this boring wait. Normally, listening to music is my only way to pass the time.</p>
       </div></details>
     </article>
     <article class="card">
@@ -512,11 +527,11 @@
     </article>
   </div>
 </section>
-<section class="topic" id="topic-9" aria-labelledby="heading-9">
+<section class="topic" id="topic-old-9" aria-labelledby="heading-old-9">
   <div class="topic-head">
     <span class="topic-num">旧题 9</span>
-    <h2 id="heading-9">Public gardens and parks</h2>
-    <span class="count">5 道题</span>
+    <h2 id="heading-old-9">Public gardens and parks</h2>
+    <span class="count">8 道题</span>
   </div><div class="question-list">
     <article class="card">
       <div class="question-row">
@@ -524,7 +539,7 @@
         <h3 lang="en">Did you like going to parks as a child?</h3>
       </div>
       <details><summary>查看答案</summary><div class="answer" lang="en">
-        <p>Yes, I really enjoyed visiting parks when I was a kid. My parents often took me there on weekends. I could run around on the grass, fly kites and enjoy the fresh air. It was such a simple joy back then.</p>
+        <p>Yes, I really enjoyed visiting parks when I was a kid. My parents often took me there on weekends. I could run around on the grass, fly kites and enjoy the fresh air. I also loved watching the old people practise taichi nearby. It was such a simple joy back then.</p>
       </div></details>
     </article>
     <article class="card">
@@ -533,14 +548,21 @@
         <h3 lang="en">Do you still like going to parks now?</h3>
       </div>
       <details><summary>查看答案</summary><div class="answer" lang="en">
-        <p>Sure, I still like going to parks. There are lots of green plants, lawns and some benches. I really enjoy breathing in the fresh air and soaking up the peaceful atmosphere, Whenever I feel stressed, a walk in the park can cheer me up and help me clear my mind.</p>
-        <p>What do you like to do when visiting a park？</p>
-        <p>I mostly like going for a walk. Because I really...</p>
+        <p>Sure, I still like going to parks. There are lots of green plants, lawns and some benches. I really enjoy breathing in the fresh air and soaking in the peaceful atmosphere, Whenever I feel stressed, a walk in the park can cheer me up and help me clear my mind.</p>
       </div></details>
     </article>
     <article class="card">
       <div class="question-row">
         <span class="qno">Q03</span>
+        <h3 lang="en">What do you like to do when visiting a park？</h3>
+      </div>
+      <details><summary>查看答案</summary><div class="answer" lang="en">
+        <p>I mostly like going for a walk. Because I really...</p>
+      </div></details>
+    </article>
+    <article class="card">
+      <div class="question-row">
+        <span class="qno">Q04</span>
         <h3 lang="en">Would you like to see more parks in your city?</h3>
       </div>
       <details><summary>查看答案</summary><div class="answer" lang="en">
@@ -549,32 +571,46 @@
     </article>
     <article class="card">
       <div class="question-row">
-        <span class="qno">Q04</span>
+        <span class="qno">Q05</span>
         <h3 lang="en">Are there any parks you want to go to in the future?</h3>
       </div>
       <details><summary>查看答案</summary><div class="answer" lang="en">
-        <p>Not really. I don&#x27;t have a specific park in mind right now. The parks I&#x27;ve been to are pretty similar, with lots of green plants and a few benches. I just hope to find a quiet park away from the noisy urban environment, where I can enjoy breathing in the fresh air and soaking up the peaceful atmosphere.</p>
-        <p>Would you prefer to play in a personal garden or public garden？</p>
+        <p>Not really. I don&#x27;t have a specific park in mind right now. The parks I have been to are pretty similar, with lots of green plants and a few benches. I just hope to find a quiet park away from the noisy urban environment, where I can enjoy breathing in the fresh air and soaking in the peaceful atmosphere.</p>
+      </div></details>
+    </article>
+    <article class="card">
+      <div class="question-row">
+        <span class="qno">Q06</span>
+        <h3 lang="en">Would you prefer to play in a personal garden or public garden？</h3>
+      </div>
+      <details><summary>查看答案</summary><div class="answer" lang="en">
         <p>Actually, I&#x27;ve never been to a personal garden, so it&#x27;s hard for me to compare. I guess personal gardens might be more luxurious, with some rare plants, fountains and things like that. But I&#x27;d probably choose public gardens, because I’m more familiar with them.</p>
       </div></details>
     </article>
     <article class="card">
       <div class="question-row">
-        <span class="qno">Q05</span>
+        <span class="qno">Q07</span>
         <h3 lang="en">How are the parks today different from those you visited as a kid?</h3>
       </div>
       <details><summary>查看答案</summary><div class="answer" lang="en">
-        <p>There are quite a few differences. When I was little, parks were simpler. They mainly had basic facilities like swings, lawns and benches. Nowadays, many city parks have added fitness equipment and art corners. All in all, they’ve become much more varied.</p>
-        <p>Would you like to play in a public garden or park？</p>
-        <p>To be honest, I can’t really tell the difference between them. Both have plenty of greenery and quiet spots to relax. To me, there isn&#x27;t much difference, so I will just go to whichever one is closer to me.</p>
+        <p>There are quite a few differences. When I was little, parks were simpler. They mainly had basic facilities like swings, lawns and benches. Nowadays, many city parks have added fitness equipment and art corners. All in all, they have become much more varied.</p>
+      </div></details>
+    </article>
+    <article class="card">
+      <div class="question-row">
+        <span class="qno">Q08</span>
+        <h3 lang="en">Would you like to play in a public garden or park？</h3>
+      </div>
+      <details><summary>查看答案</summary><div class="answer" lang="en">
+        <p>To be honest, I can’t really tell the difference between them. Both have lots of green plants, lawns and some benches. To me, there isn&#x27;t much difference, so I will just go to whichever one is closer to me.</p>
       </div></details>
     </article>
   </div>
 </section>
-<section class="topic" id="topic-10" aria-labelledby="heading-10">
+<section class="topic" id="topic-old-10" aria-labelledby="heading-old-10">
   <div class="topic-head">
     <span class="topic-num">旧题 10</span>
-    <h2 id="heading-10">Science</h2>
+    <h2 id="heading-old-10">Science</h2>
     <span class="count">6 道题</span>
   </div><div class="question-list">
     <article class="card">
@@ -633,11 +669,11 @@
     </article>
   </div>
 </section>
-<section class="topic" id="topic-11" aria-labelledby="heading-11">
+<section class="topic" id="topic-old-11" aria-labelledby="heading-old-11">
   <div class="topic-head">
     <span class="topic-num">旧题 11</span>
-    <h2 id="heading-11">Mirrors</h2>
-    <span class="count">3 道题</span>
+    <h2 id="heading-old-11">Mirrors</h2>
+    <span class="count">4 道题</span>
   </div><div class="question-list">
     <article class="card">
       <div class="question-row">
@@ -655,13 +691,20 @@
       </div>
       <details><summary>查看答案</summary><div class="answer" lang="en">
         <p>Sure, I have. I bought a full-length mirror for my dormitory. Because my school has rules about dress codes. So I use it every morning to check my outfit and make sure I look neat before I head to class.</p>
-        <p>Do you usually take a mirror with you？</p>
-        <p>No, I never take a mirror with me, It’s not something I would do. I only check my appearance when I&#x27;m getting dressed or washing up. Besides, carrying a mirror around feels a bit feminine to me.</p>
       </div></details>
     </article>
     <article class="card">
       <div class="question-row">
         <span class="qno">Q03</span>
+        <h3 lang="en">Do you usually take a mirror with you？</h3>
+      </div>
+      <details><summary>查看答案</summary><div class="answer" lang="en">
+        <p>No, I never take a mirror with me, It’s not something I would do. I only check my appearance when I&#x27;m getting dressed or washing up. Besides, carrying a mirror around feels a bit feminine to me.</p>
+      </div></details>
+    </article>
+    <article class="card">
+      <div class="question-row">
+        <span class="qno">Q04</span>
         <h3 lang="en">Would you use mirrors to decorate your room?</h3>
       </div>
       <details><summary>查看答案</summary><div class="answer" lang="en">
@@ -670,10 +713,10 @@
     </article>
   </div>
 </section>
-<section class="topic" id="topic-12" aria-labelledby="heading-12">
+<section class="topic" id="topic-old-12" aria-labelledby="heading-old-12">
   <div class="topic-head">
     <span class="topic-num">旧题 12</span>
-    <h2 id="heading-12">Outer space and stars</h2>
+    <h2 id="heading-old-12">Outer space and stars</h2>
     <span class="count">4 道题</span>
   </div><div class="question-list">
     <article class="card">
@@ -691,7 +734,7 @@
         <h3 lang="en">Do you like science fiction movies? Why?</h3>
       </div>
       <details><summary>查看答案</summary><div class="answer" lang="en">
-        <p>Not really，I find the settings in sci-fi movies are hard to understand. By comparison, I&#x27;m more into suspense films. I like trying to find out the truth hidden behind the story. Those unexpected plot twists really attract me.</p>
+        <p>Not really, I find the settings in sci-fi movies are hard to understand. By comparison, I&#x27;m more into suspense films. I like trying to find out the truth hidden behind the story. Those unexpected plot twists really attract me.</p>
       </div></details>
     </article>
     <article class="card">
@@ -714,10 +757,10 @@
     </article>
   </div>
 </section>
-<section class="topic" id="topic-13" aria-labelledby="heading-13">
+<section class="topic" id="topic-old-13" aria-labelledby="heading-old-13">
   <div class="topic-head">
     <span class="topic-num">旧题 13</span>
-    <h2 id="heading-13">Singing</h2>
+    <h2 id="heading-old-13">Singing</h2>
     <span class="count">4 道题</span>
   </div><div class="question-list">
     <article class="card">
@@ -758,10 +801,72 @@
     </article>
   </div>
 </section>
-<section class="topic" id="topic-15" aria-labelledby="heading-15">
+<section class="topic" id="topic-old-14" aria-labelledby="heading-old-14">
+  <div class="topic-head">
+    <span class="topic-num">旧题 14</span>
+    <h2 id="heading-old-14">Clothing</h2>
+    <span class="count">6 道题</span>
+  </div><div class="question-list">
+    <article class="card">
+      <div class="question-row">
+        <span class="qno">Q01</span>
+        <h3 lang="en">What kind of clothes do you like to wear?</h3>
+      </div>
+      <details><summary>查看答案</summary><div class="answer" lang="en">
+        <p>I&#x27;m really fond of casual clothes, like plain T-shirts and loose trousers. They’re comfortable to wear and don’t restrict my movement. Besides, they are made of soft material and have simple, nice designs.</p>
+      </div></details>
+    </article>
+    <article class="card">
+      <div class="question-row">
+        <span class="qno">Q02</span>
+        <h3 lang="en">Do you prefer to wear comfortable and casual clothes or smart clothes?</h3>
+      </div>
+      <details><summary>查看答案</summary><div class="answer" lang="en">
+        <p>Well, I think it depends on the occasion. In my daily life, I prefer casual and comfortable clothes, like plain T-shirts, hoodies. They are comfortable to wear and don’t restrict my movement. But for important occasions, like a party, I&#x27;ll wear a suit. It makes me look tidy and proper.</p>
+      </div></details>
+    </article>
+    <article class="card">
+      <div class="question-row">
+        <span class="qno">Q03</span>
+        <h3 lang="en">Do you like wearing T-shirts?</h3>
+      </div>
+      <details><summary>查看答案</summary><div class="answer" lang="en">
+        <p>Yes, I&#x27;m a big fan of T-shirts, especially plain T-shirts. They are comfortable to wear and don’t restrict my movement. Besides, they are easy to match with other clothes.</p>
+      </div></details>
+    </article>
+    <article class="card">
+      <div class="question-row">
+        <span class="qno">Q04</span>
+        <h3 lang="en">Do you spend a lot of time choosing clothes?</h3>
+      </div>
+      <details><summary>查看答案</summary><div class="answer" lang="en">
+        <p>Not really, I only spend a bit of time deciding what to wear. Because my style is quite simple, and I don’t have many clothes. I just stick to a few fixed combinations, so there isn’t much to choose from.</p>
+      </div></details>
+    </article>
+    <article class="card">
+      <div class="question-row">
+        <span class="qno">Q05</span>
+        <h3 lang="en">Do you wear different styles of clothes on weekdays and weekends?</h3>
+      </div>
+      <details><summary>查看答案</summary><div class="answer" lang="en">
+        <p>Not really, I wear pretty much the same thing throughout the week because I don&#x27;t have a job at the moment, so I can dress casually most of the time. I mostly go for loose, comfortable clothes. I expect to dress more formally once I start working.</p>
+      </div></details>
+    </article>
+    <article class="card">
+      <div class="question-row">
+        <span class="qno">Q06</span>
+        <h3 lang="en">What color clothes do you like?</h3>
+      </div>
+      <details><summary>查看答案</summary><div class="answer" lang="en">
+        <p>I mostly wear basic colors such as gray, black and white, because they&#x27;re easy to match with other clothes. But my favorite colour is black, since it makes me look slimmer. Still, I occasionally buy clothes in brighter colors as well.</p>
+      </div></details>
+    </article>
+  </div>
+</section>
+<section class="topic" id="topic-old-15" aria-labelledby="heading-old-15">
   <div class="topic-head">
     <span class="topic-num">旧题 15</span>
-    <h2 id="heading-15">Jokes &amp; Comedies</h2>
+    <h2 id="heading-old-15">Jokes &amp; Comedies</h2>
     <span class="count">5 道题</span>
   </div><div class="question-list">
     <article class="card">
@@ -788,7 +893,7 @@
         <h3 lang="en">Do you like to watch comedies?</h3>
       </div>
       <details><summary>查看答案</summary><div class="answer" lang="en">
-        <p>Yes, I&#x27;m crazy about comedy series. My favorite one is Friends. I really admire both their deep friendship and the funfilled lives they lead. Whenever I feel tired or stressed, I will watch some episodes to relax. Besides, I also learn some everyday English from it.</p>
+        <p>Yes, I&#x27;m crazy about comedy series. My favorite one is Friends. I really admire their deep friendship and the happy lives they lead. Whenever I feel tired or stressed, I will watch some episodes to relax. Besides, I also learn some everyday English from it.</p>
       </div></details>
     </article>
     <article class="card">
@@ -797,7 +902,7 @@
         <h3 lang="en">Have you ever watched a live show?</h3>
       </div>
       <details><summary>查看答案</summary><div class="answer" lang="en">
-        <p>Yeah, I have. I went to a live comedy show once. It was really hilarious and the atmosphere was fantastic. When everyone’s laughing, you find yourself joining in too. And I’ve found that watching it live is totally different from watching clips online.</p>
+        <p>Yeah, I have. I went to a live comedy show once. It was really hilarious and the atmosphere was fantastic. When everyone was laughing, I started laughing as well. And I’ve found that watching it live is totally different from watching clips online.</p>
       </div></details>
     </article>
     <article class="card">
@@ -807,6 +912,569 @@
       </div>
       <details><summary>查看答案</summary><div class="answer" lang="en">
         <p>Absolutely. Comedy shows are really popular now, and many people watch them online in their spare time. You know, These days, people are under great pressure from both work and life. Funny stories can help people relax and forget their worries for the time being.</p>
+      </div></details>
+    </article>
+  </div>
+</section>
+<section class="topic" id="topic-old-16" aria-labelledby="heading-old-16">
+  <div class="topic-head">
+    <span class="topic-num">旧题 16</span>
+    <h2 id="heading-old-16">Headphones</h2>
+    <span class="count">5 道题</span>
+  </div><div class="question-list">
+    <article class="card">
+      <div class="question-row">
+        <span class="qno">Q01</span>
+        <h3 lang="en">Do you use headphones?</h3>
+      </div>
+      <details><summary>查看答案</summary><div class="answer" lang="en">
+        <p>Yes, I use headphones nearly every day. I often listen to music or watch short videos while wearing them. They block out background noise and keep me from disturbing other people.</p>
+      </div></details>
+    </article>
+    <article class="card">
+      <div class="question-row">
+        <span class="qno">Q02</span>
+        <h3 lang="en">What type of headphones do you use?</h3>
+      </div>
+      <details><summary>查看答案</summary><div class="answer" lang="en">
+        <p>I use AirPods, which are wireless Bluetooth earbuds made by Apple. They are really lightweight. Sometimes I can barely even feel them. Besides, their noise cancellation is really good. A lot of people around me use AirPods too.</p>
+      </div></details>
+    </article>
+    <article class="card">
+      <div class="question-row">
+        <span class="qno">Q03</span>
+        <h3 lang="en">When would you use headphones?</h3>
+      </div>
+      <details><summary>查看答案</summary><div class="answer" lang="en">
+        <p>Well, I mostly use headphones when I take public transport. They help me pass the time on the way. Besides, they block out background noise, especially on the bus, and keep me from disturbing other people.</p>
+      </div></details>
+    </article>
+    <article class="card">
+      <div class="question-row">
+        <span class="qno">Q04</span>
+        <h3 lang="en">In what conditions would you not use headphones?</h3>
+      </div>
+      <details><summary>查看答案</summary><div class="answer" lang="en">
+        <p>Well, I would not use headphones when I’m crossing the street. It’s dangerous because I need to hear what is happening around me. I also take them off when someone talks to me. It&#x27;s just basic politeness.</p>
+      </div></details>
+    </article>
+    <article class="card">
+      <div class="question-row">
+        <span class="qno">Q05</span>
+        <h3 lang="en">Is wearing headphones comfortable?</h3>
+      </div>
+      <details><summary>查看答案</summary><div class="answer" lang="en">
+        <p>It depends on how long I use them. My AirPods are generally comfortable for short periods. But if I wear them for several hours straight, my ears start to feel sore. So I don&#x27;t keep them in all the time. I take them out and give my ears a break after a while.</p>
+      </div></details>
+    </article>
+  </div>
+</section>
+<section class="topic" id="topic-new-1" aria-labelledby="heading-new-1">
+  <div class="topic-head">
+    <span class="topic-num">新题 1</span>
+    <h2 id="heading-new-1">Travelling</h2>
+    <span class="count">4 道题</span>
+  </div><div class="question-list">
+    <article class="card">
+      <div class="question-row">
+        <span class="qno">Q01</span>
+        <h3 lang="en">What transport do you often use when travelling?</h3>
+      </div>
+      <details><summary>查看答案</summary><div class="answer" lang="en">
+        <p>I usually take planes or high-speed trains when I travel. For long-distance journeys, I normally choose to fly. It saves a lot of time. The only downside is that air tickets can be pricey at times. For shorter trips, I prefer high-speed trains because they&#x27;re cheaper and more convenient.</p>
+      </div></details>
+    </article>
+    <article class="card">
+      <div class="question-row">
+        <span class="qno">Q02</span>
+        <h3 lang="en">Do you often ride a bicycle?</h3>
+      </div>
+      <details><summary>查看答案</summary><div class="answer" lang="en">
+        <p>Not very often now. I used to cycle to school when I was in junior high school, but these days I hardly ever ride a bike. To be honest, I’m a bit lazy and I find cycling quite tiring. So I usually choose other means of transport.</p>
+      </div></details>
+    </article>
+    <article class="card">
+      <div class="question-row">
+        <span class="qno">Q03</span>
+        <h3 lang="en">Do you prefer to sit by the window when travelling?</h3>
+      </div>
+      <details><summary>查看答案</summary><div class="answer" lang="en">
+        <p>Yes, definitely. I prefer a window seat. Whenever I take a plane or a high-speed train, I always prioritize one. That’s because from there, I can see the scenery go by outside the window. It helps me relax during the journey.</p>
+      </div></details>
+    </article>
+    <article class="card">
+      <div class="question-row">
+        <span class="qno">Q04</span>
+        <h3 lang="en">Did you have a long journey with your family as a child?</h3>
+      </div>
+      <details><summary>查看答案</summary><div class="answer" lang="en">
+        <p>Yes. When I was a child, my family took a long trip to Beijing. It was the first time I had travelled so far from home. We visited several famous historical sites and tried the local food. Of all my trips, this one has left the deepest impression on me.</p>
+      </div></details>
+    </article>
+  </div>
+</section>
+<section class="topic" id="topic-new-2" aria-labelledby="heading-new-2">
+  <div class="topic-head">
+    <span class="topic-num">新题 2</span>
+    <h2 id="heading-new-2">Rubbish and recycling</h2>
+    <span class="count">4 道题</span>
+  </div><div class="question-list">
+    <article class="card">
+      <div class="question-row">
+        <span class="qno">Q01</span>
+        <h3 lang="en">Did you recycle when you were a kid?</h3>
+      </div>
+      <details><summary>查看答案</summary><div class="answer" lang="en">
+        <p>Not really. I knew very little about recycling as a child, so we used to put all our rubbish in the same bin. I only learned more about it when I got older. For example, we can recycle paper and plastic bottles to help protect the environment.</p>
+      </div></details>
+    </article>
+    <article class="card">
+      <div class="question-row">
+        <span class="qno">Q02</span>
+        <h3 lang="en">Is waste sorting common in your country?</h3>
+      </div>
+      <details><summary>查看答案</summary><div class="answer" lang="en">
+        <p>It depends on the area. waste sorting is widely promoted in large cities. For example, in Shanghai, you could be fined if you don&#x27;t sort your rubbish properly. But it doesn’t seem to be as common in smaller towns yet.</p>
+      </div></details>
+    </article>
+    <article class="card">
+      <div class="question-row">
+        <span class="qno">Q03</span>
+        <h3 lang="en">How do you recycle things like paper and plastic?</h3>
+      </div>
+      <details><summary>查看答案</summary><div class="answer" lang="en">
+        <p>To be honest, I don’t separate paper and plastic from my other rubbish at the moment. Sometimes I can’t tell what can be recycled and what can’t. The easiest way is to put everything in one bag and throw it away. I know that’s not good, but I haven’t got into the habit of sorting my rubbish yet.</p>
+      </div></details>
+    </article>
+    <article class="card">
+      <div class="question-row">
+        <span class="qno">Q04</span>
+        <h3 lang="en">What do you do when you see rubbish on the street?</h3>
+      </div>
+      <details><summary>查看答案</summary><div class="answer" lang="en">
+        <p>Honestly, I usually leave it alone. I’m reluctant to pick it up because I’m worried about hygiene. Although I know it’s not ideal, for now, I just make sure I don&#x27;t litter myself.</p>
+      </div></details>
+    </article>
+  </div>
+</section>
+<section class="topic" id="topic-new-3" aria-labelledby="heading-new-3">
+  <div class="topic-head">
+    <span class="topic-num">新题 3</span>
+    <h2 id="heading-new-3">Tiredness</h2>
+    <span class="count">4 道题</span>
+  </div><div class="question-list">
+    <article class="card">
+      <div class="question-row">
+        <span class="qno">Q01</span>
+        <h3 lang="en">What do you do when you feel tired?</h3>
+      </div>
+      <details><summary>查看答案</summary><div class="answer" lang="en">
+        <p>I usually take a break, scroll through my phone and watch short videos of good-looking people. But I think sleep is still the best way to relax. Sometimes I plan to have a quick nap to get my energy back. But the problem is, I often sleep too long and find it hard to get up for the rest of the day.</p>
+      </div></details>
+    </article>
+    <article class="card">
+      <div class="question-row">
+        <span class="qno">Q02</span>
+        <h3 lang="en">When would you feel tired?</h3>
+      </div>
+      <details><summary>查看答案</summary><div class="answer" lang="en">
+        <p>I usually feel tired after a long study session, especially if I have been sitting for hours without a break. It leaves me tired both physically and mentally. So I try to stand up and walk around every now and then. Or I scroll through my phone and watch short videos of good-looking people to relax a bit.</p>
+      </div></details>
+    </article>
+    <article class="card">
+      <div class="question-row">
+        <span class="qno">Q03</span>
+        <h3 lang="en">Do you often feel tired?</h3>
+      </div>
+      <details><summary>查看答案</summary><div class="answer" lang="en">
+        <p>Yes, more often than I’d like. I need to take a break every now and then. Sometimes I feel drained even when I haven’t done much. I can&#x27;t even tell what used up all my energy. I think the pressure of studying has a lot to do with it.</p>
+      </div></details>
+    </article>
+    <article class="card">
+      <div class="question-row">
+        <span class="qno">Q04</span>
+        <h3 lang="en">When you feel tired, do you still go out with your friends?</h3>
+      </div>
+      <details><summary>查看答案</summary><div class="answer" lang="en">
+        <p>It depends on how tired I am. If I’m only a bit tired, I’ll still see my friends. We might play mahjong or go out for a meal, and that helps me unwind. If I’m completely worn out, there&#x27;s no way I would go out. I would rather stay in and rest.</p>
+      </div></details>
+    </article>
+  </div>
+</section>
+<section class="topic" id="topic-new-4" aria-labelledby="heading-new-4">
+  <div class="topic-head">
+    <span class="topic-num">新题 4</span>
+    <h2 id="heading-new-4">Shoes</h2>
+    <span class="count">4 道题</span>
+  </div><div class="question-list">
+    <article class="card">
+      <div class="question-row">
+        <span class="qno">Q01</span>
+        <h3 lang="en">Which do you prefer, fashionable shoes or comfortable shoes?</h3>
+      </div>
+      <details><summary>查看答案</summary><div class="answer" lang="en">
+        <p>It depends on the occasion. For everyday wear, I prefer comfortable shoes, like  trainers. They go well with most outfits and look really stylish. But for a special occasion, like a party, I might wear leather shoes.</p>
+      </div></details>
+    </article>
+    <article class="card">
+      <div class="question-row">
+        <span class="qno">Q02</span>
+        <h3 lang="en">How much money do you usually spend on shoes?</h3>
+      </div>
+      <details><summary>查看答案</summary><div class="answer" lang="en">
+        <p>I don’t have a fixed budget. I usually spend a few hundred yuan on a pair of shoes. But if a design really catches my eye, I’m willing to pay a bit more. I don&#x27;t mind paying for something I really like.</p>
+      </div></details>
+    </article>
+    <article class="card">
+      <div class="question-row">
+        <span class="qno">Q03</span>
+        <h3 lang="en">Have you ever bought shoes online?</h3>
+      </div>
+      <details><summary>查看答案</summary><div class="answer" lang="en">
+        <p>Yes, quite often. It’s a convenient way to shop, and I can browse lots of different styles and brands without even leaving home. But getting the right fit can be tricky because I can’t try the shoes on first.</p>
+      </div></details>
+    </article>
+    <article class="card">
+      <div class="question-row">
+        <span class="qno">Q04</span>
+        <h3 lang="en">Do you like buying shoes? How often?</h3>
+      </div>
+      <details><summary>查看答案</summary><div class="answer" lang="en">
+        <p>I guess I do, though I&#x27;m not crazy about shopping for shoes. New styles sometimes catch my eye, but I don&#x27;t buy them without thinking. I normally get a new pair every few months, usually when the seasons change.</p>
+      </div></details>
+    </article>
+  </div>
+</section>
+<section class="topic" id="topic-new-5" aria-labelledby="heading-new-5">
+  <div class="topic-head">
+    <span class="topic-num">新题 5</span>
+    <h2 id="heading-new-5">Politeness</h2>
+    <span class="count">4 道题</span>
+  </div><div class="question-list">
+    <article class="card">
+      <div class="question-row">
+        <span class="qno">Q01</span>
+        <h3 lang="en">What did you do to show your politeness as a child?</h3>
+      </div>
+      <details><summary>查看答案</summary><div class="answer" lang="en">
+        <p>There were a few things I used to do. I greeted older people, said thank you when someone gave me something, and avoided interrupting others while they were talking. It’s these small things that reveal a person’s manners,and I really care about these details.</p>
+      </div></details>
+    </article>
+    <article class="card">
+      <div class="question-row">
+        <span class="qno">Q02</span>
+        <h3 lang="en">On what occasions should we be polite?</h3>
+      </div>
+      <details><summary>查看答案</summary><div class="answer" lang="en">
+        <p>I’d say we should be polite in almost any situation, especially when dealing with strangers, talking to older people, or spending time in public places. It makes it easier for everyone to get along. It also shows that you have good manners.</p>
+      </div></details>
+    </article>
+    <article class="card">
+      <div class="question-row">
+        <span class="qno">Q03</span>
+        <h3 lang="en">Do you think being polite is very important?</h3>
+      </div>
+      <details><summary>查看答案</summary><div class="answer" lang="en">
+        <p>Absolutely. Good manners show that you respect other people, and even small acts of politeness can help you build better relationships. What’s more, People are usually more willing to be friends with someone polite than with someone rude.</p>
+      </div></details>
+    </article>
+    <article class="card">
+      <div class="question-row">
+        <span class="qno">Q04</span>
+        <h3 lang="en">How did you learn to be polite as a child?</h3>
+      </div>
+      <details><summary>查看答案</summary><div class="answer" lang="en">
+        <p>I learned most of it from my parents. They often reminded me to greet older people and say please and thank you. My teachers also taught me to treat my classmates with respect. In China, people generally think it&#x27;s important to have good manners.</p>
+      </div></details>
+    </article>
+  </div>
+</section>
+<section class="topic" id="topic-new-6" aria-labelledby="heading-new-6">
+  <div class="topic-head">
+    <span class="topic-num">新题 6</span>
+    <h2 id="heading-new-6">Fruit and vegetables</h2>
+    <span class="count">5 道题</span>
+  </div><div class="question-list">
+    <article class="card">
+      <div class="question-row">
+        <span class="qno">Q01</span>
+        <h3 lang="en">Do people in your country like planting vegetables?</h3>
+      </div>
+      <details><summary>查看答案</summary><div class="answer" lang="en">
+        <p>Quite a few people do, especially older people. In the countryside, most families have a small vegetable patch where they grow things like tomatoes and peppers. In cities, some grow vegetables in small gardens or on their balconies because they believe home-grown produce is fresher and safer.</p>
+      </div></details>
+    </article>
+    <article class="card">
+      <div class="question-row">
+        <span class="qno">Q02</span>
+        <h3 lang="en">Were there any kinds of fruit or vegetables you disliked as a child?</h3>
+      </div>
+      <div class="question-row">
+        <span class="qno">Q03</span>
+        <h3 lang="en">What kinds of fruit and vegetables do you dislike?</h3>
+      </div>
+      <details><summary>查看答案</summary><div class="answer" lang="en">
+        <p>Of course, I really disliked bitter melon. Its taste was far too bitter for me, so I refused to eat it even though my parents kept telling me it was good for me. But all my family love bitter melon, though I have no idea why.</p>
+      </div></details>
+    </article>
+    <article class="card">
+      <div class="question-row">
+        <span class="qno">Q04</span>
+        <h3 lang="en">Where do you usually buy fruit and vegetables?</h3>
+      </div>
+      <details><summary>查看答案</summary><div class="answer" lang="en">
+        <p>I usually buy them from the supermarket near my home. It’s only a ten-minute walk, so it’s really convenient. Besides, the fruit and vegetables in the supermarket are neatly arranged. They look clean and fresh. But They’re a little pricey.</p>
+      </div></details>
+    </article>
+    <article class="card">
+      <div class="question-row">
+        <span class="qno">Q05</span>
+        <h3 lang="en">How often do you eat fruit and vegetables?</h3>
+      </div>
+      <details><summary>查看答案</summary><div class="answer" lang="en">
+        <p>Vegetables are part of my daily diet, so I eat them almost every day. I think eating plenty of vegetables is good for my health. As for fruit, I only have it occasionally. Because I’m just naturally not a big fan of fruit.</p>
+      </div></details>
+    </article>
+  </div>
+</section>
+<section class="topic" id="topic-new-7" aria-labelledby="heading-new-7">
+  <div class="topic-head">
+    <span class="topic-num">新题 7</span>
+    <h2 id="heading-new-7">Advertisement</h2>
+    <span class="count">6 道题</span>
+  </div><div class="question-list">
+    <article class="card">
+      <div class="question-row">
+        <span class="qno">Q01</span>
+        <h3 lang="en">Do you often see advertisements on your phone or computer?</h3>
+      </div>
+      <details><summary>查看答案</summary><div class="answer" lang="en">
+        <p>Yes, all the time. Advertisements keep popping up whenever I’m browsing on my phone or computer, so I normally skip them or close them straight away. Besides, Some advertisements are tricky to get rid of, and they break my focus when I’m reading something.</p>
+      </div></details>
+    </article>
+    <article class="card">
+      <div class="question-row">
+        <span class="qno">Q02</span>
+        <h3 lang="en">What kind of advertising do you like?</h3>
+      </div>
+      <div class="question-row">
+        <span class="qno">Q03</span>
+        <h3 lang="en">Do you like advertisements?</h3>
+      </div>
+      <details><summary>查看答案</summary><div class="answer" lang="en">
+        <p>I’m most drawn to creative advertisements. They usually feel fresh and more like entertainment, so sometimes I don&#x27;t even realize I&#x27;m watching an ad. If all advertisements had interesting stories or eye-catching visuals, they wouldn&#x27;t annoy me as much.</p>
+      </div></details>
+    </article>
+    <article class="card">
+      <div class="question-row">
+        <span class="qno">Q04</span>
+        <h3 lang="en">Do you see a lot of advertising on trains or other transport?</h3>
+      </div>
+      <details><summary>查看答案</summary><div class="answer" lang="en">
+        <p>Yes, advertising is everywhere on public transport. On trains and the subway, I often see posters on the walls and video advertisements on screens. But I never really pay attention to what they say, so I can&#x27;t remember any of them clearly.</p>
+      </div></details>
+    </article>
+    <article class="card">
+      <div class="question-row">
+        <span class="qno">Q05</span>
+        <h3 lang="en">Is there an advertisement that made an impression on you as a child?</h3>
+      </div>
+      <details><summary>查看答案</summary><div class="answer" lang="en">
+        <p>Yes. I remember a TV advertisement about family. It showed how much parents do for their children as they grow up. It was simple but touching, which is why it left such a deep impression on me.</p>
+      </div></details>
+    </article>
+    <article class="card">
+      <div class="question-row">
+        <span class="qno">Q06</span>
+        <h3 lang="en">Have you ever bought something because of an advertisement?</h3>
+      </div>
+      <details><summary>查看答案</summary><div class="answer" lang="en">
+        <p>Not really. An advertisement alone doesn&#x27;t convince me to buy anything. Even if it catches my eye, I&#x27;ll compare prices and read reviews first. Some products look great in advertisements but turn out to be disappointing, so I don&#x27;t want to waste my money.</p>
+      </div></details>
+    </article>
+  </div>
+</section>
+<section class="topic" id="topic-new-8" aria-labelledby="heading-new-8">
+  <div class="topic-head">
+    <span class="topic-num">新题 8</span>
+    <h2 id="heading-new-8">Paper</h2>
+    <span class="count">5 道题</span>
+  </div><div class="question-list">
+    <article class="card">
+      <div class="question-row">
+        <span class="qno">Q01</span>
+        <h3 lang="en">Do you carry paper and pens with you when you go out?</h3>
+      </div>
+      <details><summary>查看答案</summary><div class="answer" lang="en">
+        <p>Hardly ever. I seldom carry paper or pens when I go out because my phone can already meet my basic daily needs. And I don’t have many occasions where I need to sign things. If I have to write something down, I just use the notes app.</p>
+      </div></details>
+    </article>
+    <article class="card">
+      <div class="question-row">
+        <span class="qno">Q02</span>
+        <h3 lang="en">Do people still keep handwritten letters today?</h3>
+      </div>
+      <details><summary>查看答案</summary><div class="answer" lang="en">
+        <p>Yes, some people do. They keep handwritten letters because they have sentimental value and bring back precious memories. I think handwritten letters are romantic. Words on paper feel warmer than messages on a phone screen.</p>
+      </div></details>
+    </article>
+    <article class="card">
+      <div class="question-row">
+        <span class="qno">Q03</span>
+        <h3 lang="en">Do you still write physical letters?</h3>
+      </div>
+      <details><summary>查看答案</summary><div class="answer" lang="en">
+        <p>Not really, although some people still keep handwritten letters because of their sentimental value, most everyday communication happens through phone messages these days. I think handwritten letters are romantic. Words on paper feel warmer than messages on a phone screen.</p>
+      </div></details>
+    </article>
+    <article class="card">
+      <div class="question-row">
+        <span class="qno">Q04</span>
+        <h3 lang="en">What did you like to do with paper as a child?</h3>
+      </div>
+      <details><summary>查看答案</summary><div class="answer" lang="en">
+        <p>Honestly, there&#x27;s nothing special about it. I mainly used paper for schoolwork. I would write down notes and do exercises on it every day. Sometimes, I also used it to complete my drawing assignments.</p>
+      </div></details>
+    </article>
+    <article class="card">
+      <div class="question-row">
+        <span class="qno">Q05</span>
+        <h3 lang="en">Have you made any crafts with paper?</h3>
+      </div>
+      <details><summary>查看答案</summary><div class="answer" lang="en">
+        <p>Yes, but only a few times, and they were all school assignments. I still remember that when I was little, my grandpa helped me make model planes. To be honest, I didn&#x27;t find them interesting at all.</p>
+      </div></details>
+    </article>
+  </div>
+</section>
+<section class="topic" id="topic-new-9" aria-labelledby="heading-new-9">
+  <div class="topic-head">
+    <span class="topic-num">新题 9</span>
+    <h2 id="heading-new-9">Secondary school</h2>
+    <span class="count">4 道题</span>
+  </div><div class="question-list">
+    <article class="card">
+      <div class="question-row">
+        <span class="qno">Q01</span>
+        <h3 lang="en">Is there anything you miss about your secondary school?</h3>
+      </div>
+      <details><summary>查看答案</summary><div class="answer" lang="en">
+        <p>Yes, I miss my English teacher most. Because…</p>
+      </div></details>
+    </article>
+    <article class="card">
+      <div class="question-row">
+        <span class="qno">Q02</span>
+        <h3 lang="en">What was your favourite subject at secondary school?</h3>
+      </div>
+      <details><summary>查看答案</summary><div class="answer" lang="en">
+        <p>Biology was my favourite subject…</p>
+      </div></details>
+    </article>
+    <article class="card">
+      <div class="question-row">
+        <span class="qno">Q03</span>
+        <h3 lang="en">Were there any subjects that you found difficult at secondary school?</h3>
+      </div>
+      <details><summary>查看答案</summary><div class="answer" lang="en">
+        <p>Yes, I really struggled with physics. I found the theories quite abstract and hard to follow, and the calculations often left me confused as well. I could spend an hour on one problem and still get the answer completely wrong. It was really frustrating.</p>
+      </div></details>
+    </article>
+    <article class="card">
+      <div class="question-row">
+        <span class="qno">Q04</span>
+        <h3 lang="en">Do you remember your first day at secondary school?</h3>
+      </div>
+      <details><summary>查看答案</summary><div class="answer" lang="en">
+        <p>Yes, I do. I remember feeling nervous and excited at the same time, because everything at the new school seemed unfamiliar to me. I didn’t know anyone there, and I had no idea where my classrooms were.</p>
+      </div></details>
+    </article>
+  </div>
+</section>
+<section class="topic" id="topic-new-10" aria-labelledby="heading-new-10">
+  <div class="topic-head">
+    <span class="topic-num">新题 10</span>
+    <h2 id="heading-new-10">Name</h2>
+    <span class="count">4 道题</span>
+  </div><div class="question-list">
+    <article class="card">
+      <div class="question-row">
+        <span class="qno">Q01</span>
+        <h3 lang="en">Do you often forget people’s names?</h3>
+      </div>
+      <details><summary>查看答案</summary><div class="answer" lang="en">
+        <p>Occasionally, but I’m generally quite good with names. Even now, I can still remember many of my classmates’ names from primary and secondary school. But when I can’t recall someone’s name, I feel a little embarrassed, so I usually ask them gently again.</p>
+      </div></details>
+    </article>
+    <article class="card">
+      <div class="question-row">
+        <span class="qno">Q02</span>
+        <h3 lang="en">How do you feel when people can’t remember your name?</h3>
+      </div>
+      <details><summary>查看答案</summary><div class="answer" lang="en">
+        <p>I feel a bit hurt, to be honest. It makes me wonder whether they paid much attention when we met. Still, I don’t take it too personally. Because it depends on the person, some people simply struggle with names.</p>
+      </div></details>
+    </article>
+    <article class="card">
+      <div class="question-row">
+        <span class="qno">Q03</span>
+        <h3 lang="en">How do you remember people’s names?</h3>
+      </div>
+      <details><summary>查看答案</summary><div class="answer" lang="en">
+        <p>I don’t really use any particular trick. After meeting someone a few times, I naturally connect their names with their faces, Especially when they have an interesting personality, I find it easier to remember their names.</p>
+      </div></details>
+    </article>
+    <article class="card">
+      <div class="question-row">
+        <span class="qno">Q04</span>
+        <h3 lang="en">Is it easy for you to remember people’s names?</h3>
+      </div>
+      <details><summary>查看答案</summary><div class="answer" lang="en">
+        <p>Generally, yes. （同1）</p>
+      </div></details>
+    </article>
+  </div>
+</section>
+<section class="topic" id="topic-new-11" aria-labelledby="heading-new-11">
+  <div class="topic-head">
+    <span class="topic-num">新题 11</span>
+    <h2 id="heading-new-11">Opportunities</h2>
+    <span class="count">4 道题</span>
+  </div><div class="question-list">
+    <article class="card">
+      <div class="question-row">
+        <span class="qno">Q01</span>
+        <h3 lang="en">Do you often get new opportunities?</h3>
+      </div>
+      <details><summary>查看答案</summary><div class="answer" lang="en">
+        <p>Not really. I don&#x27;t come across new opportunities very often, and most of the ones I get are related to my studies. Maybe that&#x27;s because my daily routine is pretty much the same at the moment. I think I need to be more proactive about seeking out new possibilities.</p>
+      </div></details>
+    </article>
+    <article class="card">
+      <div class="question-row">
+        <span class="qno">Q02</span>
+        <h3 lang="en">Do you like taking on new opportunities?</h3>
+      </div>
+      <details><summary>查看答案</summary><div class="answer" lang="en">
+        <p>Yes, I do. I enjoy taking up new opportunities because they allow me to learn new things and have different experiences. But lately my routine has been pretty much the same, and I&#x27;ve been busy studying English.</p>
+      </div></details>
+    </article>
+    <article class="card">
+      <div class="question-row">
+        <span class="qno">Q03</span>
+        <h3 lang="en">Should people try as many different things as they can?</h3>
+      </div>
+      <details><summary>查看答案</summary><div class="answer" lang="en">
+        <p>Yes, I think it’s worth trying different things. It can help people discover new interests and find out what they’re good at. Besides, these experiences may broaden their horizons. I think the meaning of life is about trying different things.</p>
+      </div></details>
+    </article>
+    <article class="card">
+      <div class="question-row">
+        <span class="qno">Q04</span>
+        <h3 lang="en">Did you have opportunities to take part in new activities as a child?</h3>
+      </div>
+      <details><summary>查看答案</summary><div class="answer" lang="en">
+        <p>Yes. My parents encouraged me to try new things, so I joined a few school clubs and entered some competitions. Those experiences gave me a chance to explore different hobbies and find out what I enjoyed. I think it&#x27;s important for children to try new activities.</p>
       </div></details>
     </article>
   </div>
